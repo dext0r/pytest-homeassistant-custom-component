@@ -73,6 +73,14 @@ def cli(regen):
             os.path.join(PACKAGE_DIR, "components", "__init__.py"),
         )
         shutil.copy2(
+            os.path.join(TMP_DIR, "tests", "testing_config", "__init__.py"),
+            os.path.join(PACKAGE_DIR, "testing_config", "__init__.py"),
+        )
+        shutil.copy2(
+            os.path.join(TMP_DIR, "tests", "testing_config", "custom_components", "__init__.py"),
+            os.path.join(PACKAGE_DIR, "testing_config", "custom_components", "__init__.py"),
+        )
+        shutil.copy2(
             os.path.join(TMP_DIR, "tests", "testing_config", "custom_components", "test_constant_deprecation", "__init__.py"),
             os.path.join(PACKAGE_DIR, "testing_config", "custom_components", "test_constant_deprecation", "__init__.py"),
         )
